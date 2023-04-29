@@ -63,10 +63,13 @@ figure img[src] {
 
 .line-container {
   display: flex;
+  padding-left: 5em;
+  padding-right: 5em;
+ justify-content: space-around;
 }
 
 .line-container img {
-  width: 162px;
+  width: 210px;
 }
 
 .line-container h4 {

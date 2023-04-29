@@ -57,7 +57,7 @@
           placeholder="Enter Profile Name"
         />
 
-        <p class="paragraphy">What is your data of birth:</p>
+        <p class="paragraphy">What is your date of birth:</p>
         <div class="container-flex">
           <input type="text" name="day" id="user_info" placeholder="Day" required />
           <input

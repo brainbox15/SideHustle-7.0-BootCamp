@@ -43,7 +43,7 @@
                 <div class="groups">
                 <div class="border"></div>
                 <div class="or">
-                  <p>or</p>
+                  <p>or </p>
                 </div>
           <div class="border"></div>
                 </div>
