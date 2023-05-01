@@ -68,7 +68,7 @@ $students = mysqli_query($connect, 'SELECT * FROM audios');
         <td><?= $student['audio_url'] ?></td>
     
         <td>
-        <a id="del" href="delete-user.php?id=<?= $student['id'] ?>"> <i class="far fa-times-circle"></i></a>
+        <a id="del" href="songs/delete-audio.php?id=<?= $student['id'] ?>"> <i class="far fa-times-circle"></i></a>
 
         </td>
 
