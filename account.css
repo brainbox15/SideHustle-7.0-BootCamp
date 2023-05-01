@@ -85,3 +85,18 @@ header div #home{
 header div #home:hover{
     color: blue;
 }
+
+.far{
+    color: #fff;
+}
+
+
+table{
+    margin-left: 1em;
+    text-align: center;
+    background-color: #fff;
+}
+
+#del i{
+color: rgba(255, 0, 0, 0.685);
+}

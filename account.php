@@ -33,17 +33,51 @@ include "sessionstart.php";
 		 	while ($audio = mysqli_fetch_assoc($res)) { 
 		 ?>
 		 	
-	        <audio src="songs/uploads/<?=$audio['audio_url']?>" 
+	        <audio id="audio" src="songs/uploads/<?=$audio['audio_url']?>" 
 	        	   controls >
 	        	
 	        </audio>
-			
+
 	    <?php 
 	     }
 		 }else {
 		 	echo "<h1>Empty</h1>";
 		 }
+
 		 ?>
+
+
 	</div>
+	<?php   
+$students = mysqli_query($connect, 'SELECT * FROM audios');
+
+?>
+
+<table>
+    <thead>
+        <td>S/N</td>
+        <td>Songs</td>
+        <Td>Action</Td>
+
+    </thead>
+    <tbody>
+        <?php
+        foreach ($students as $student): ?>
+    <tr>
+        <td><?= $student['id'] ?></td>
+        <td><?= $student['audio_url'] ?></td>
+    
+        <td>
+        <a id="del" href="delete-student.php?id=<?= $student['id'] ?>"> <i class="far fa-times-circle"></i></a>
+
+        </td>
+
+    </tr>
+    <?php 
+    endforeach;
+     ?>
+    </tbody>
+</table>
+
 </body>
 </html>
